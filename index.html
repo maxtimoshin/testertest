@@ -430,6 +430,7 @@
       }
 
       .services img {
+
       }
 
       /* Adaptive */
@@ -454,84 +455,104 @@
           padding: 0 32px;
           margin: 0 0 36px 0;
         }
-        .payment-number {
-          margin: 0 0 34px 0;
-          font-weight: 600;
+        .payment-number{
+            margin:0 0 34px 0;
+            font-weight: 600;
         }
         .amount {
-          justify-content: flex-start;
-          gap: 6px;
+            justify-content: flex-start;
+            gap:6px;
         }
         .payment-info-block {
-          margin: 0 0 27px 0;
-          padding: 42px;
+            margin: 0 0 27px 0;
+            padding:42px;
         }
         .main-form-block {
-          padding: 30px 42px;
+            padding:30px 42px;
         }
         .expiry-cvv {
-          gap: 20px;
+            gap:20px;
         }
         .services {
-          width: 80%;
+            width: 80%;
         }
         .services img {
-          width: 80px;
+            
+            width:80px;
         }
+
       }
-      @media (max-width: 580px) {
+      @media (max-width:580px) {
         .mobile-header {
-          height: 100px;
+            height: 100px;
         }
         .services img {
-          width: 60px;
+            width:60px;
         }
         .logo {
-          max-width: 300px;
+            max-width: 300px;
         }
         .payment-number {
-          font-size: 16px;
+            font-size:16px;
         }
-        .amount span {
-          font-size: 16px !important;
+        .amount span{
+            font-size:16px !important;
         }
         .main {
-          margin: 0 16px;
+            margin: 0 16px;
         }
         .mobile-header {
-          margin: 0 0 16px 0;
+            margin: 0 0 16px 0;
         }
         .payment-info-block {
-          margin: 0 0 16px 0;
+            margin:0 0 16px 0;
         }
       }
-      @media (max-width: 480px) {
+      @media (max-width:480px) {
         .logo {
-          max-width: 200px;
+            max-width: 200px;
         }
         .expiry-cvv {
-          flex-direction: column;
-          gap: 20px;
-          margin-top: 20px;
+            /* flex-direction: column; */
+            gap:10px;
+            margin-top:20px;
         }
         .cardholder-name {
-          margin-top: 20px;
+            margin-top:20px;
         }
         .submit-button {
-          margin-top: 20px;
+            margin-top:20px;
         }
         .cvv,
         .expiry {
-          max-width: 150px;
+            max-width: 150px;
         }
         .payment-info-block {
-          padding: 24px;
+            padding: 24px;
         }
         .main-form-block {
-          padding: 24px;
+            padding:24px;
         }
         .services img {
-          width: 60px;
+            width:60px;
+        }
+        .card-number-text,
+        .card-expiry-text,
+        .cvv,
+        .cardholder-text {
+            font-size:18px;
+        }
+        @media (max-width:352px) {
+            .card-number-text,
+        .card-expiry-text,
+        .cvv,
+        .cardholder-text {
+            font-size:16px;
+        }
+        .payment-number,
+        .amount span{
+            font-size:14px !important;
+        }
         }
       }
     </style>
@@ -570,7 +591,7 @@
         <div class="payment-info-block">
           <div class="payment-and-lang">
             <div class="space"></div>
-            <div class="payment-n">№$!MERCHANT_ORDER_ID</div>
+            <div class="payment-n">№ $!MERCHANT_ORDER_ID</div>
             <ul class="languages-list">
               <li>
                 <a class="current-language" href=""
